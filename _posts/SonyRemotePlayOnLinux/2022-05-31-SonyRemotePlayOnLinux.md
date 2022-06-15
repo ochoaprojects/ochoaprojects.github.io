@@ -16,7 +16,7 @@ If your Console is on your local network, is turned on or in standby mode and do
 You will then need to register your Console with Chiaki. You will need two more pieces of information to do this.
 
 # Obtaining your PSN AccountID
-Starting with PS4 7.0, it is necessary to use a so-called "AccountID" as opposed to the "Online-ID" for registration (streaming itself did not change). This ID seems to be a unique identifier for a PSN Account and it can be obtained from the PSN after logging in using OAuth. A Python 3 script which does this is provided at [psn-account-id.py](psn-account-id.py) or can be copied from below. Simply run it in a terminal and follow the instructions. Once you know your ID, write it down. You will likely never have to do this process again.
+Starting with PS4 7.0, it is necessary to use a so-called "AccountID" as opposed to the "Online-ID" for registration (streaming itself did not change). This ID seems to be a unique identifier for a PSN Account and it can be obtained from the PSN after logging in using OAuth. A Python 3 script which does this is provided at [psn-account-id.py](https://gitea.ochoaprojects.com/brandon/psn-accout-id.py/src/branch/main/psn-account-id.py) or can be copied from below. Simply run it in a terminal and follow the instructions. Once you know your ID, write it down. You will likely never have to do this process again.
 
 ```python
 #!/usr/bin/env python3
