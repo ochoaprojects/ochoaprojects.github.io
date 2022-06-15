@@ -15,7 +15,7 @@ Portainer is a simple and lightweight, but powerful application that is used to 
   - [Ports](#ports)
   - [Advanced Container Settings](#advanced-container-settings)
   - [How to use the Application Templates in Portainer](#how-to-use-the-application-templates-in-portainer)
-- [How to Start & Stop Containers](#how-to-start---stop-containers)
+- [How to Start and Stop Containers](#how-to-start-and-stop-containers)
 - [How to Create and Manage Volumes](#how-to-create-and-manage-volumes)
 - [How to Pull and Manage Docker Container Images](#how-to-pull-and-manage-docker-container-images)
 - [How to create and manage networks](#how-to-create-and-manage-networks)
@@ -90,7 +90,7 @@ If you don’t want the hassle of running a container from scratch then you’re
 
 A few seconds later, your new application will be up and running and ready to access.
 
-# How to Start & Stop Containers 
+# How to Start and Stop Containers 
 ![Portainer-Container-Commands](/project-assets/PortainerDocumented/Portainer-Container-Commands.png)
 
 To issue basic start and stop commands to your containers, click on “Containers” in the left sidebar of Portainer. Next, tick the box to the left of the container and then select the function you want to perform from the function bar (as seen above). From this bar you can start, stop, kill, restart, pause, resume, and delete any of the containers on your docker host.
