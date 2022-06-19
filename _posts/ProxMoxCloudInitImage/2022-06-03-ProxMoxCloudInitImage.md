@@ -1,7 +1,7 @@
 ---
 title: Create a Debian Cloud-Init Template on Proxmox
 date: 2022-06-03 12:00:00 -500
-categories: [proxmox]
+categories: [Proxmox]
 tags: [hypervisor,proxmox,cloudinit,automation]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: How to use Sony Remote Play on Linux
 date: 2022-05-31 12:00:00 -500
-categories: [programming,python]
+categories: [Programming,Python]
 tags: [python,sony,playstation,linux,chiaki,psn]
 ---
 

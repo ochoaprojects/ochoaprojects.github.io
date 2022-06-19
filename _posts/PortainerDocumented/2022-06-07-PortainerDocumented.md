@@ -1,7 +1,7 @@
 ---
 title: Portainer Documented
 date: 2022-06-07 12:00:00 -500
-categories: [docker,containers]
+categories: [Docker,Containers]
 tags: [docker,containers,webui,management]
 ---
 
