@@ -14,14 +14,10 @@ Debian doesn’t provide a special image for this use case, but the [Debian imag
 
 ## Table of Contents
 - [Download a base Debian cloud image](#download-a-base-debian-cloud-image)
-    - [How to get the latest link to use with wget](#how-to-get-the-latest-link-to-use-with-wget)
-    - [How to download an image directly to ProxMox server](#how-to-download-an-image-directly-to-proxmox-server)
+  - [How to get the latest link to use with wget](#how-to-get-the-latest-link-to-use-with-wget)
+  - [How to download an image directly to ProxMox server](#how-to-download-an-image-directly-to-proxmox-server)
 - [Create a Proxmox VM using the image](#create-a-proxmox-vm-using-the-image)
-- [Convert it to a template](#convert-it-to-a-template)
-- [Clone the template into a full VM and set some parameters](#clone-the-template-into-a-full-vm-and-set-some-parameters)
-- [Automate it so it runs on a regular basis](#automate-it-so-it-runs-on-a-regular-basis)
-- [Shell script to create template](#shell-script-to-create-template)
-
+- [Usage](#usage)
 
 # Download a base Debian cloud image
 
