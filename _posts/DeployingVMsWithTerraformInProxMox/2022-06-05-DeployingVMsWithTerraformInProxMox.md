@@ -17,7 +17,7 @@ Leveraging our ProxMox cloud-init templates to deploy VMs entirely through Terra
     - [main.tf](#maintf)
     - [vars.tf](#varstf)
 - [Terraform plan](#terraform-plan)
-- [Run Terraform plan and watch the VMs appear!](#run-terraform-plan-and-watch-the-vms-appear-)
+- [Run Terraform plan and watch the VMs appear!](#run-terraform-plan-and-watch-the-vms-appear)
 - [Terraform Destroy](#terraform-destroy)
 
 # Prep a cloud-init template to use with Terraform
@@ -353,7 +353,7 @@ apply" now.
 You can see the output of the planning phase of Terraform. It is telling us it will create proxmox_vm_qemu.Kubernetes-Node[0] with a list of parameters. You can double-check the IP address here, as well as the rest of the basic settings. At the bottom is the summary – “Plan: 1 to add, 0 to change, 0 to destroy.” Also note that it tells us again what step to run next – “terraform apply”.
 
 
-# Run Terraform plan and watch the VMs appear!
+# Run Terraform plan and watch the VMs appear
 
  With the summary stating what we want, we can now apply the plan (terraform apply). Note that it prompts you to type in ‘yes’ to apply the changes after it determines what the changes are. It typically takes 1m15s +/- 15s for my VMs to get created.
 
