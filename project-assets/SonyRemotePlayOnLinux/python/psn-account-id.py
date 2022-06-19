@@ -1,24 +1,3 @@
----
-title: How to use Sony Remote Play on Linux
-date: 2022-05-31 12:00:00 -500
-categories: [programming,python]
-tags: [python,sony,playstation,linux,chiaki,psn]
----
-
-Chiaki is a Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play for Linux, FreeBSD, OpenBSD, Android, macOS, Windows, Nintendo Switch and potentially even more platforms.
-
-# Installing
-You can either download a pre-built release or build Chiaki from source. This download will be for the remote device you want to stream to.
-
-# Usage
-If your Console is on your local network, is turned on or in standby mode and does not have Discovery explicitly disabled, Chiaki should find it. Otherwise, you can add it manually. To do so, click the "+" icon in the top right, and enter your Console's IP address.
-
-You will then need to register your Console with Chiaki. You will need two more pieces of information to do this.
-
-# Obtaining your PSN AccountID
-Starting with PS4 7.0, it is necessary to use a so-called "AccountID" as opposed to the "Online-ID" for registration (streaming itself did not change). This ID seems to be a unique identifier for a PSN Account and it can be obtained from the PSN after logging in using OAuth. A Python 3 script that does this is provided at [psn-account-id.py](/project-assets/SonyRemotePlayOnLinux/python/psn-account-id.py) or can be copied from below. Simply run it in a terminal and follow the instructions. Once you know your ID, write it down. You will likely never have to do this process again.
-
-```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -140,23 +119,3 @@ print()
 print("🍙 This is your AccountID:")
 print(user_id_base64)
 exit(0)
-```
-
-1.
-![First Prompt of PyScript](/project-assets/SonyRemotePlayOnLinux/FirstPromptOfPyScript.png)
-Run the Python Script in a Terminal.
-
-*Note* I'm using Visual Studio Code to run this, so I am able to click the link directly from the terminal to visit the necessary page.
-
-2.
-![Sony Sign In](/project-assets/SonyRemotePlayOnLinux/SonySignIn.png)
-Sign into your Sony Playstation Account.
-
-3.
-![Output from Redirected URL](/project-assets/SonyRemotePlayOnLinux/OutputFromReditedURL.png)
-Paste the URL you had after the "Redirect" back into the temrinal with the Python Script. This will output information for the account you signed into, including the "AccountID" that we need for connecting Chiaki.
-
-# Obtaining a Registration PIN
-To register a Console with a PIN, it must be put into registration mode. To do this on a PS4, simply go to: Settings -> Remote Play -> Add Device, or on a PS5: Settings -> System -> Remote Play -> Link Device.
-
-You can now double-click your Console in Chiaki's main window to start Remote Play.
