@@ -89,7 +89,7 @@ ansible 2.5.0
   ```
 
 # Structure
-This is the file and folder structure we are aiming for after creating all of our `yaml` files. All of this can be found in the [yaml files and structure](/yaml%20files%20and%20structure/) folder of this repo.
+This is the file and folder structure we are aiming for after creating all of our `yaml` files. All of this can be found in the [yaml files and structure](/project-assets/ProvisionDockerWithAnsible/) folder of this repo.
 ```
 $ tree
 .
