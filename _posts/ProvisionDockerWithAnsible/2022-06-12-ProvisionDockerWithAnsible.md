@@ -13,7 +13,7 @@ Using Ansible to provision remote servers with Docker and Docker-compose.
 - [Files](#files)
     - [provisioning/hosts.yml](#provisioninghostsyml)
     - [provisioning/site.yml](#provisioningsiteyml)
-    - [provisioning/host_vars/remote](#provisioninghostvarsremote)
+    - [provisioning/host-vars/remote](#provisioninghost-varsremote)
     - [provisioning/roles/setup/handlers/main.yml](#provisioningrolessetuphandlersmainyml)
     - [provisioning/roles/setup/tasks/docker.yml](#provisioningrolessetuptasksdockeryml)
     - [provisioning/roles/setup/tasks/main.yml](#provisioningrolessetuptasksmainyml)
@@ -88,10 +88,10 @@ ansible 2.5.0
   python version = 2.7.12 (default, Dec  4 2017, 14:50:18) [GCC 5.4.0 20160609]
   ```
 
-  # Structure
-  This is the file and folder structure we are aiming for after creating all of our `yaml` files. All of this can be found in the [yaml files and structure](/yaml%20files%20and%20structure/) folder of this repo.
-  ```
-  $ tree
+# Structure
+This is the file and folder structure we are aiming for after creating all of our `yaml` files. All of this can be found in the [yaml files and structure](/yaml%20files%20and%20structure/) folder of this repo.
+```
+$ tree
 .
 └── provisioning
     ├── host_vars
@@ -134,9 +134,8 @@ all:
     - setup
 ```
 
-#### provisioning/host_vars/remote
+### provisioning/host-vars/remote
 ```
-
 ---
 # Variables listed here are applicable to "setup" role
  
