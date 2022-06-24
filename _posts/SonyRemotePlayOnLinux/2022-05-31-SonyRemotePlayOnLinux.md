@@ -146,7 +146,8 @@ exit(0)
 ![First Prompt of PyScript](/project-assets/SonyRemotePlayOnLinux/FirstPromptOfPyScript.png)
 Run the Python Script in a Terminal.
 
-*Note* I'm using Visual Studio Code to run this, so I am able to click the link directly from the terminal to visit the necessary page.
+> Note I'm using Visual Studio Code to run this, so I am able to click the link directly from the terminal to visit the necessary page.
+{: .prompt-tip }
 
 2.
 ![Sony Sign In](/project-assets/SonyRemotePlayOnLinux/SonySignIn.png)
@@ -160,3 +161,5 @@ Paste the URL you had after the "Redirect" back into the temrinal with the Pytho
 To register a Console with a PIN, it must be put into registration mode. To do this on a PS4, simply go to: Settings -> Remote Play -> Add Device, or on a PS5: Settings -> System -> Remote Play -> Link Device.
 
 You can now double-click your Console in Chiaki's main window to start Remote Play.
+
+![Steam Deck Remote Play](/project-assets/SonyRemotePlayOnLinux/steamdeck-remoteplay.jpg)
