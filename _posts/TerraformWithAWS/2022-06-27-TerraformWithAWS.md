@@ -19,7 +19,7 @@ Terraform is a powerful tool that allows us to automate infrastructure in our cl
 - [Create Security Group to Allow Port Web Traffic and SSH](#create-security-group-to-allow-port-web-traffic-and-ssh)
 - [Create a Network Interface with an IP in the Subnet](#create-a-network-interface-with-an-ip-in-the-subnet)
 - [Assign an Elastic IP to the Network Interface](#assign-an-elastic-ip-to-the-network-interface)
-- [Create Debian Server and Install/Enable Apache2](#create-debian-server-and-install-enable-apache2)
+- [Create Debian Server then Install and Enable Apache2](#create-debian-server-then-install-and-enable-apache2)
 - [Terraform Plan](#terraform-plan)
 - [Terraform Apply](#terraform-apply)
 - [Checking the Results](#checking-the-results)
@@ -260,7 +260,7 @@ resource "aws_eip" "one" {
 }
 ```
 
-# Create Debian Server and Install/Enable Apache2
+# Create Debian Server then Install and Enable Apache2
 Finally we have our networking the way we want it. The fun part of creating our actual webserver is here! A big piece of this part is specifing the `AMI` (Amazon Machine Image). We want to use a Debian instance to house our web server and this can be done by finding the correct AMI ID. It's important to check that the AMI ID you are choosing is correct because the AMI IDs supplied by Amazon are subject to change if you will be using theirs. To find the most up to date ID, open up the AWS console, then navigate to the EC2 service, click launch an instance from the top right hand corner of the screen, type "debian" in the search bar and press the enter key.
 
 ![Search Debian AMIs](/project-assets/TerraformWithAWS/search-debian-ami.png)
