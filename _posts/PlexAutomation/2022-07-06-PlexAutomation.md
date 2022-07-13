@@ -17,7 +17,7 @@ How to build a complete Plex server with full automation for accepting and proce
 - [Mounting Multiple Drives as One](#mounting-multiple-drives-as-one)
 - [Installing Docker](#installing-docker)
 - [Plex Config](#plex-config)
-- [Transmission Config](#transmission-config)
+- [Deluge Config](#deluge-config)
 - [Jackett Config](#jackett-config)
 - [Sonarr & Radarr Docker Config](#sonarr--radarr-docker-config)
 - [Ombi Config](#ombi-config)
