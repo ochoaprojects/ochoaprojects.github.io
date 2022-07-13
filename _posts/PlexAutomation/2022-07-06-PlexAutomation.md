@@ -13,7 +13,7 @@ How to build a complete Plex server with full automation for accepting and proce
     - [Optimizing for Ratios](#optimizing-for-ratios)
     - [HDD vs SSD](#hdd-vs-ssd)
     - [HDD Backups vs. Redundancy](#hdd-backups-vs-redundancy)
-- [Installing mhddfs (patched)](#installing-mhddfs-patched)
+- [Installing mhddfs](#installing-mhddfs)
 - [Mounting Multiple Drives as One](#mounting-multiple-drives-as-one)
 - [Installing Docker](#installing-docker)
 - [Plex Config](#plex-config)
