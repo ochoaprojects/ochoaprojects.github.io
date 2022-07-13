@@ -71,7 +71,7 @@ mhddfs contains a bug where you can occasionally run into a segfault error when 
 
 The docker installation method is outdated and doesn't run so you'll have to install `fakeroot` and run the command from the Readme.
 
-```
+```bash
 sudo apt-get install -y fakeroot
 git clone https://github.com/vdudouyt/mhddfs-nosegfault.git ~/Downloads
 cd ~/Downloads/mhddfs-nosegfault
@@ -80,12 +80,12 @@ fakeroot dpkg-buildpackage
 
 It'll give you trouble about signing, ignore it and install the .deb package
 
-```
+```bash
 dpkg -i ~/Downloads/mhddfs_0.1.39+nosegfault2_amd64.deb
 ```
 
 # Mounting Multiple Drives as One
-```
+```bash
 mkdir /mnt/hdd1
 mkdir /mnt/hdd2
 mkdir /mnt/media
@@ -100,14 +100,14 @@ mhddfs#/mnt/hdd1,/mnt/hdd2 /mnt/media fuse defaults,allow_other 0 0
 
 This mounts both drives on `/mnt/hdd1` and `/mnt/hdd2` and then mounts them together via `mhddfs` on `/mnt/media`. Now let’s set up our file system with a folder for torrents and a couple for our Libraries.
 
-```
+```bash
 mkdir /mnt/media/torrents
 mkdir /mnt/media/Movies
 mkdir /mnt/media/Shows
 ```
 
 # Installing Docker
-```
+```bash
 sudo apt-get update
 sudo apt install docker.io
 sudo systemctl start docker
@@ -117,21 +117,21 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 I also like to keep my configs in one easy place in case I want to transfer them anywhere, so let’s create a folder to hold our docker container configs and create our `docker-compose.yml` file
 
-```
+```bash
 mkdir ~/docker-services
 touch ~/docker-services/docker-compose.yml
 ```
 
 And add this to your docker-compose file. We will be filling in the services in the coming steps. If you are confused on how to add the services or how your file should look, here is a good resource on docker-compose.
 
-```
+```yaml
 ---
 version: "2"
 services:
 ```
 
 # Plex Config
-```
+```yaml
 plex:
     image: linuxserver/plex:latest
     container_name: plex
@@ -149,14 +149,14 @@ plex:
 
 This will start your Plex server on port 32400, and add the volumes `/mnt` and `~/docker-services/plex/config` onto the container. If you are trying to move your current Plex configs over, run something like this
 
-```
+```bash
 mv /var/lib/plexmediaserver/* ~/docker-services/plex/config/
 ```
 
 Note that plex is looking for your config directory to contain a single directory `Library`. Look for that directory and copy it over.
 
 # Deluge Config
-```
+```yaml
 deluge:
     image: linuxserver/deluge
     container_name: deluge
@@ -176,7 +176,7 @@ deluge:
 Notice how we mount our deluge drive on the container in the same location as the host, rather than something like `/downloads` (which is suggested over at linuxserver). This, plus the config below ensures Sonarr and Radarr send torrents to the right directory.
 
 # Jackett Config
-```
+```yaml
 jackett:
     image: linuxserver/jackett
     container_name: jackett
@@ -196,7 +196,7 @@ jackett:
 This is super basic and just boots your Jackett service on port 9117. Doesn’t need much else.
 
 # Sonarr & Radarr Docker Config
-```
+```yaml
 sonarr:
     image: linuxserver/sonarr
     container_name: sonarr
@@ -231,7 +231,7 @@ Make sure those `PUID` and `GUID` match the ID for your user and group… and ma
 If you are running into issues, check the logs of the docker container or the logs in the web UI. It should tell you exactly where it’s having trouble. Then log into the user you set it to run as an attempt the same actions. See whats going on first hand.
 
 # Ombi Config
-```
+```yamml
 ombi:
     image: linuxserver/ombi
     container_name: ombi
@@ -253,7 +253,7 @@ This will open Ombi on port 3579 but sadly they don’t have SSL support by defa
 
 Run this command to boot up all your services!
 
-```
+```bash
 cd ~/docker-services
 docker-compose up -d
 ```
