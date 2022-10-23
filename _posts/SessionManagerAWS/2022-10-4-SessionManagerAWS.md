@@ -21,7 +21,7 @@ Session Manager is the useful AWS tool that you might not be thinking about. If 
   - [Setting Up EC2 Instance](#setting-up-ec2-instance)
   - [Starting Port Forward](#starting-port-forward)
 
-> The Session Manager is part of the AWS Systems Manager and if you want to know more or read up on the offical documentation, that can be found [here.](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
+> The Session Manager is part of the AWS Systems Manager and if you want to know more or read up on the offical documentation, that can be found [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
 {: .prompt-info }
 
 # Create IAM Role
