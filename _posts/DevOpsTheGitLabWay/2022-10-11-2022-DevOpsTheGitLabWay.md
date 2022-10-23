@@ -8,6 +8,12 @@ tags: [gitlab,devops,ci,cd,docker]
 Have you been searching for a platform to host your code, and build your DevOps workflow and processes all in one place? Why not use GitLab for CI/CD pipelines? GitLab lets you host your application code and use the GitLab CI CD feature to continuously test, build and deploy your application on every code change.
 
 ## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Initializing a GitLab Project](#initializing-a-gitlab-project)
+- [Configuring Jobs on GitLab](#configuring-jobs-on-gitlab)
+- [Securing Credentials by Creating Secret Variables](#securing-credentials-by-creating-secret-variables)
+- [Building and Pushing a Docker Image to Docker Hub](#building-and-pushing-a-docker-image-to-docker-hub)
+- [Configuring Stages on the GitLab CI CD pipeline](#configuring-stages-on-the-gitlab-ci-cd-pipeline)
 
 # Prerequisites
 - A [GitLab](https://about.gitlab.com/) account, a repository already set up, and a [personal access token](https://kp2.in.htwg-konstanz.de/git/help/user/profile/personal_access_tokens.md).
@@ -15,7 +21,7 @@ Have you been searching for a platform to host your code, and build your DevOps 
 - An Ubuntu server droplet on DigitalOcean with Docker installed and running – You can sign up for the free $100 credit.
 - UFW firewall enabled on the Ubuntu server droplet.
 
-## Initializing a GitLab Project
+# Initializing a GitLab Project
 Before configuring a CI/CD pipeline on GitLab, you must first have a repository on GitLab that houses your application. This tutorial uses a Python flask application to illustrate GitLab CI CD in action.
 
 Clone the following [repo](https://gitea.ochoaprojects.com/brandon/gitlab-devop-scripts.git):
