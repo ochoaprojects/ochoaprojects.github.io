@@ -18,7 +18,7 @@ Going through the steps on how to build a search feature in a Python Flask app. 
     - [Completed FlaskApp.py](#completed-flaskapppy)
     - [Completed Search HTML Template](#completed-search-html-template)
   - [Completed Results HTML Template](#completed-results-html-template)
-    - [It Works!](#it-works-)
+    - [It Works!](#it-works)
 
 # Creating a Flask App with Search Feature
 
@@ -412,7 +412,7 @@ if __name__ == '__main__':
 </html>
 ```
 
-### It Works!
+### It Works
 Searching for a user
 
 ![Search For User](/project-assets/FlaskAppWithSimpleSearch/search-for-user.png)
