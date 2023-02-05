@@ -18,8 +18,6 @@ Have you been searching for a platform to host your code, and build your DevOps 
 # Prerequisites
 - A [GitLab](https://about.gitlab.com/) account, a repository already set up, and a [personal access token](https://kp2.in.htwg-konstanz.de/git/help/user/profile/personal_access_tokens.md).
 - A [Docker Hub](https://hub.docker.com/) account and a repository.
-- An Ubuntu server droplet on DigitalOcean with Docker installed and running – You can sign up for the free $100 credit.
-- UFW firewall enabled on the Ubuntu server droplet.
 
 # Initializing a GitLab Project
 Before configuring a CI/CD pipeline on GitLab, you must first have a repository on GitLab that houses your application. This tutorial uses a Python flask application to illustrate GitLab CI CD in action.
