@@ -201,7 +201,7 @@ def perform_search(query):
 ```
 
 > When using `sqlite3.connect()` as shown here in the code block. I have seen `database` and `database.db` passed here. If you getting the following error: `sqlite3.DatabaseError: file is not a database` then it will likely be resolved by dropping the `.db` file extension.
-{: .prompt-note }
+{: .prompt-info }
 
 This search function connects to a SQLite database, executes a search query that matches the query string against a column in a table, and returns the search results. You can customize the search query to meet the specific needs of your database and search requirements.
 
