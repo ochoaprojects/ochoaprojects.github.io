@@ -1,5 +1,5 @@
 ---
-title: Provision a Linux Server With Docker Using Anislbe
+title: Provision a Linux Server With Docker Using Ansible
 date: 2022-06-12 12:00:00 -500
 categories: [Infrastructure as Code,Ansible]
 tags: [ansible,linux,docker,automation,docker-compose]
@@ -119,6 +119,7 @@ all:
       ansible_host: 192.168.99.30 # Remote host
       ansible_port: 22
 ```
+{: file='provisioning/hosts.yml'}
 
 ### provisioning/site.yml
 ```yaml
@@ -133,6 +134,7 @@ all:
   roles:
     - setup
 ```
+{: file='provisioning/site.yml'}
 
 ### provisioning/host-vars/remote
 ```
@@ -144,6 +146,7 @@ ansible_python_interpreter: /usr/bin/python3
 remote_user: ubuntu
 docker_group: docker
 ```
+{: file='provisioning/host-vars/remote'}
 
 ### provisioning/roles/setup/handlers/main.yml
 ```yaml
@@ -157,6 +160,7 @@ docker_group: docker
     state: started
     enabled: yes
 ```
+{: file='provisioning/roles/setup/handlers/main.yml'}
 
 ### provisioning/roles/setup/tasks/docker.yml
 ```yaml
@@ -245,6 +249,7 @@ docker_group: docker
   tags:
     - docker
 ```
+{: file='provisioning/roles/setup/tasks/docker.yml'}
 
 ### provisioning/roles/setup/tasks/main.yml
 ```yaml
@@ -276,6 +281,7 @@ docker_group: docker
   tags:
     - system
 ```
+{: file='provisioning/roles/setup/tasks/main.yml'}
 
 # Build
 ```

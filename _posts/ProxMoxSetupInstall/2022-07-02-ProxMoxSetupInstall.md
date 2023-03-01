@@ -1,7 +1,7 @@
 ---
 title: ProxMox Setup and Installation
 date: 2022-07-02 12:00:00 -500
-categories: [ProxMox]
+categories: [Homelab, ProxMox]
 tags: [proxmox]
 ---
 

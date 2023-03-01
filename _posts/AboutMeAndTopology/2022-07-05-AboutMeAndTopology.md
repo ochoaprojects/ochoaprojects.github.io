@@ -21,6 +21,7 @@ pin: true
                              |_|           |__/                   
 
 ```
+{: file='ochoaprojects'}
 
 I find myself in a situation that I’m sure most others can relate to. That situation being when you spend all day and all night working on some projects, developing some new skills, playing with that new-found software, language, server hardware, etc. The problem is, you’re just having too much fun with it and you just don’t stop hacking away at whatever it is you are doing. Sooner or later, you are more or less done with that project or whatever it is you are working on for now, and you move on to the next adventure in your tech curiosity. When this happens, you find yourself a year or more later and realize you are trying to remember that cool piece of code you used, or that setting you changed, or that command line tool just right for the job, which leaves you stuck scratching your brain trying to remember. It’s important to realize that documenting all the cool fun stuff you are working with is just as vital as that cool fun stuff itself. I’m aiming to correct this aspect of my past, current, and future tech adventures and share them all with everyone here!
 

@@ -1,7 +1,7 @@
 ---
 title: Plex Automation
 date: 2022-07-06 12:00:00 -500
-categories: [Plex]
+categories: [Homelab, Plex]
 tags: [docker,containers,webui,management,monitoring,automation,api,plex,sonarr,radarr,jackett,ombi,deluge]
 ---
 

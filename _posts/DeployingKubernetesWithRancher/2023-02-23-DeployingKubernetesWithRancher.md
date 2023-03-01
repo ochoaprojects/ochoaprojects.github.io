@@ -98,6 +98,7 @@ resource "proxmox_vm_qemu" "Kubernetes-Node" {
   EOF
 }
 ```
+{: file='main.tf'}
 
 Things worth noting with the Terraform code above would be the following:
 - `count` - I have this set to 4 but you can simply change this number depending on how many nodes you intend to deploy for your Kubernetes cluster.
@@ -123,6 +124,7 @@ variable "vmid" {
       default = 100
     }
 ```
+{: file='vars.tf'}
 
 # Set-up Update Upgrade Install Docker
 Log onto the server via SSH, update and upgrade, and finally install docker. For rancher, a specific version of docker seems to be needed. Use the following script to install docker:
