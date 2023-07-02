@@ -263,6 +263,18 @@ To find the correct ARN for this Environment Variable, head over to EC2 -> Load 
 When it comes to SSL/TLS termination and handling HTTPS traffic, ALB listeners play a crucial role. ALB listeners support Server Name Indication (SNI), which allows the ALB to handle multiple SSL/TLS certificates for different domains or subdomains on a single IP address. This enables the ALB to route traffic to the appropriate target based on the requested domain or hostname.
 {: .prompt-tip }
 
+# Lambda Layer
+
+For this Lambda function we will also be using the following Python libraries:
+- **boto3:** Boto3 is a Python library that provides an interface to interact with AWS services, allowing developers to automate and manage cloud resources programmatically.
+- **os:** The "os" library is a built-in Python module that provides functions for interacting with the operating system, enabling tasks such as file operations, environment variables access, and process management.
+- **cryptography:** The "cryptography" library is a Python package that offers cryptographic primitives, such as encryption, decryption, and key generation, allowing developers to secure data and communications in their applications.
+
+We will create the lambda layer the same way as referenced in [Using AWS Lambda and API Gateway to Check URLs](https://ochoaprojects.github.io/posts/UsingAWSLambdaWithAPIGateway/#to-create-a-lambda-layer) post. Please follow the link for the steps. 
+
+For the completed lambda layer for this project, here is the download link:
+[lambdalayer.zip](/project-assets/UsingS3ForCertAutomation/lambdalayer.zip)
+
 # Configure S3 Bucket Trigger
 
 I'll assume here that you know how to create an S3 bucket in AWS. Here I will simply show you how you add the S3 bucket trigger for the Lambda Function.
